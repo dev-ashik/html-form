@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Lists</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+
+  <!-- using font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+  <link rel="stylesheet" href="../commonStyle.css">
+  <link rel="stylesheet" href="./SelectionLists.css">
+</head>
+<body>
+    <div class="container">
+        <!-- navber start -->
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div>input</div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html"
+                  >HTML <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >CSS <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../autofocus/autofocus.html"
+                  >Auto Focus <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../TabIndex/TabIndex.html"
+                  >tab index <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- navber start -->
+    
+
+      <section>
+        <label for="text">Selection Lists</label>
+        
+        <select name="select1">
+            <option value="" disabled selected>-- Select a Cat --</option>
+            <option value="cheshire">Cheshire Cat</option>
+            <option value="hat"></option>
+            <option value="bigglesworth">Mr Bigglesworth</option>
+            <option value="Fritz">Fritz the Cat</option>
+            <option value="spot">Spot</option>
+            <option value="cat">The Cat</option>
+            <option value="Tom">Tom</option>
+            <option value="Heathcliff">Heathcliff</option>
+            <option value="gafrield">Garfield</option>
+        </select>
+
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> ...</p>
+      </section>
+      <section>
+        <label for="text">Selection Lists</label>
+        
+        <select name="select1" style="border: none;">
+            <optgroup label="Literature">
+                <option value="cheshire">Cheshire Cat</option>
+                <option value="hat">The cat in the Hat</option>
+            </optgroup>
+            <optgroup label="Film">
+                <option value="The load of rings">The load of rings</option>
+                <option value="Alven">Alven</option>
+            </optgroup>
+            <optgroup label="Television">
+                <option value="Spot">Spot</option>
+                <option value="Song">Song</option>
+                <option value="etc">etc</option>
+            </optgroup>
+            <optgroup label="Comics">
+                <option value="Heathcliff">Heathcliff</option>
+                <option value="Garfield">Garfield</option>
+            </optgroup>
+        </select>
+
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> ...</p>
+      </section>
+      <section>
+        <label for="text">Selection Lists</label>
+        
+        <select name="select1" size="5">
+            <option value="" disabled selected>-- Select a Cat --</option>
+            <option value="cheshire">Cheshire Cat</option>
+            <option value="hat"></option>
+            <option value="bigglesworth">Mr Bigglesworth</option>
+            <option value="Fritz">Fritz the Cat</option>
+            <option value="spot">Spot</option>
+            <option value="cat">The Cat</option>
+            <option value="Tom">Tom</option>
+            <option value="Heathcliff">Heathcliff</option>
+            <option value="gafrield">Garfield</option>
+        </select>
+
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> ...</p>
+      </section>
+
+
+
+   
+</body>
+</html>

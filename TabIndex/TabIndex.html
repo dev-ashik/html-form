@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- using font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../commonStyle.css">
+</head>
+<body>
+    <div class="container">
+        <!-- navber start -->
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div>input</div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html"
+                  >HTML <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >CSS <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../autofocus/autofocus.html"
+                  >Auto Focus <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../TabIndex/TabIndex.html"
+                  >tab index <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- navber start -->
+
+
+      <section>
+        <form action="">
+            <label for="">tab-1</label>
+            <input type="text" name="text1" autofocus tabindex="1">
+
+            <label for="">tab-3</label>
+            <input type="text" name="text1" tabindex="3">
+
+            <label for="">tab-2</label>
+            <input type="text" name="text1" tabindex="2">
+
+            <label for="">tab-4</label>
+            <input type="text" name="text1" tabindex="4">
+        </form>
+
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> ...</p>
+      </section>
+    </div>
+</body>
+</html>

@@ -1,106 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./text-box.css">
-</head>
-<body>
-    <section class="container">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- using font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- navber start -->
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div>input</div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >CSS <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./autofocus/autofocus.html"
+                  >Auto Focus <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./SelectionLists/SelectionLists.html"
+                  >Selection Lists <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./TabIndex/TabIndex.html"
+                  >tab index <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- navber start -->
+
+      <section>
+        <label for="text">type text</label>
+        <input id="text" type="text" placeholder="write your text">
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> anything can input.</p>
+      </section>
+
+      <section>
+        <label for="">type email</label>
+        <input class="date" type="email" placeholder="input your email"/>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> to take email.</p>
+      </section>
+
+      <section>
+        <label for="">type password</label>
+        <input class="date" type="password" placeholder="Enter Password"/>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> value is not visible.</p>
+      </section>
+
+      <section>
+        <label for="">type search</label>
+        <input class="date" type="search" placeholder="search..."/>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> search type input fild. with close button</p>
+      </section>
+
+      <section>
+        <label for="">type url</label>
+        <input class="date" type="url" placeholder=""/>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> </p>
+      </section>
+
+      <section>
+        <label for="">type number</label>
+        <input
+          class="numberInput-box"
+          type="number"
+          name="quantity"
+          placeholder="enter number"
+          id="number"
+        />
+        <label for="">type number (1-10)</label>
+        <input
+          class="numberInput-box"
+          type="number"
+          name="quantity"
+          min="1"
+          max="10"
+          placeholder="enter number"
+          id="number"
+        />
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> only number can take. minimum number is 1. and maximum number is 999</p>
+      </section>
+
+      <section>
+        <label for="">type date</label>
+        <input class="date" type="date" />
+        <input class="date" type="date" pattern="/d{4}-/d{2}-/d{2}" title="YYYY-MM-DD" />
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> only for take date.</p>
+      </section>
+
+      <section>
+        <label for="">type range</label>
+        <input type="range" name="range1" min="0" max="100" step="10" value="20">
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> </p>
+      </section>
+
+      <section>
+        <label for="">type color</label>
+        <input class="date" type="color" value="#336699"/>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> only for take date.</p>
+      </section>
+
+
+      <section>
+        <label for="">text area</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea placeholder="write your message">
+        
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> </p>
+      </section>
+
+      <section>
+        <label for="">Check boxe:</label>
+
         <div>
-            <!-- navber start -->
-            <div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                      <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                      </form>
-                    </div>
-                  </nav>
-            </div>
-            <!-- navber start -->
-
-            <div class="row">
-                <div class="col-md-6">
-                    <input class="numberInput-box" type="number" name="quantity" min="1" placeholder="৳">
-                </div>
-                <div class="col-md-6">
-                    <input class="date" type="date">
-                </div>
-            </div>
-
-            <!-- dropdown start -->
-            <div class="d-flex bd-highlight dropDown-section">
-                <div class="p-2 w-100 bd-highlight">ক্যাটাগরি সিলেক্ট করুন</div>
-                <div class="p-2 flex-shrink-1 bd-highlight">
-                    <div class="dropdown">
-                        <button class="dropdown-toggle-split dropDown-button downArrow-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="arrow-down"></i></button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
-                </div>
-              </div>
-              <!-- dropdown end -->
-
-
-
-              <!-- text-box start download file -->
-              <div class="textArea">
-                <textarea class="editor-textbox text-box"><span class="textArea">Text :-</span></textarea>
-                <!-- download js file link -->
-                <script src="./textArea-textBox.js" type="text/javascript"></script>
-                <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
-            </div>
-              <!-- text-box start download file -->
-
-              <!-- text-box start online file-->
-              <div class="textArea">
-                <textarea class="editor-textbox text-box"><span class="textArea">Text :-</span></textarea>
-                <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-                <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
-            </div>
-              <!-- text-box start online file-->
-            
+          <input type="checkbox" name="check1" checked >
+          <input type="checkbox" name="check2">
         </div>
-    </section>
+        
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> check box</p>
+      </section>
+
+      <section>
+        <label for="">Radio buttons:</label>
+
+        <div>
+          <input type="radio" name="radio1" value="one">
+          <input type="radio" name="radio1" value="two" checked>
+          <input type="radio" name="radio1" value="three">
+        </div>
+
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> Radio buttons</p>
+      </section>
+      
+
+      
+
+
+      <!-- dropdown start -->
+      <div class="d-flex bd-highlight dropDown-section">
+        <div class="p-2 w-100 bd-highlight">ক্যাটাগরি সিলেক্ট করুন</div>
+        <div class="p-2 flex-shrink-1 bd-highlight">
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle-split dropDown-button downArrow-button"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="arrow-down"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- dropdown end -->
+    </div>
 
     <!-- bootstrap js start -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
     <!-- bootstrap js end -->
-</body>
+  </body>
 </html>
