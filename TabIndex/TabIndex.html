@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -37,8 +38,8 @@
                 >
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="../SelectionLists/SelectionLists.html"
-                  >Selection Lists <span class="sr-only">(current)</span></a
+                <a class="nav-link" href="../autofocus/autofocus.html"
+                  >Auto Focus <span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item active">
@@ -55,16 +56,21 @@
 
       <section>
         <form action="">
-            <label for="">autofocus on:</label>
-            <input type="text" name="text1" autofocus>
+            <label for="">tab-1</label>
+            <input type="text" name="text1" autofocus tabindex="1">
 
-            <label for="">autofocus off:</label>
-            <input type="text" name="text1" autofocus>
-        </form> 
+            <label for="">tab-3</label>
+            <input type="text" name="text1" tabindex="3">
 
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> autofocus when page reload.</p>
+            <label for="">tab-2</label>
+            <input type="text" name="text1" tabindex="2">
+
+            <label for="">tab-4</label>
+            <input type="text" name="text1" tabindex="4">
+        </form>
+
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> ...</p>
       </section>
-
     </div>
 </body>
 </html>
