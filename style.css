@@ -1,18 +1,10 @@
-.numberInput-box {
-    border: 2px solid lightgray;
-    border-radius: 5px;
-    margin: 20px 0px;
-    width: 100%;
-    padding: 10px 20px;
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    display: inline-block;
 }
 
-.date {
-    border: 2px solid lightgray;
-    border-radius: 5px;
-    margin: 20px 0px;
-    width: 100%;
-    padding: 10px 20px;
-}
+
 
 
 /***** dropDown start *****/
@@ -43,15 +35,9 @@
 /***** dropDown start *****/
 
 
-/****** text-box start ******/
-.text-box {
-    width: 100%;
-    padding: 20px;
-    height: 300px;
-    color: gray;
-}
 
-.textArea {
-    margin-bottom: 50px;
+@media (max-width: 750px) {
+    section {
+        padding: 2rem;
+    }
 }
-/****** text-box end ******/
