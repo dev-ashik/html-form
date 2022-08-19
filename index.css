@@ -36,8 +36,3 @@ input[type="radio"] {
 
 
 
-@media (max-width: 750px) {
-    section {
-        padding: 2rem;
-    }
-}
