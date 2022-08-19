@@ -42,7 +42,7 @@ label {
 }
 
 .description {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
     margin-top: 2rem;
     color: gray;
@@ -50,7 +50,56 @@ label {
 
 .description i {
     font-size: 1.5rem;
-    line-height: 1.5rem;
-    margin-top: 2rem;
+    line-height: 1.5;
     color: rgb(29, 6, 243);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar {
+    padding: 0.2rem 7%;
+}
+
+.navbar-brand i {
+    color: var(--black) !important;
+    font-size: 3rem;
+}
+
+.navbar-nav .nav-item a {
+    font-size: 1.3rem;
+    color: var(--black);
+    font-weight: 500;
+    padding: .2rem 1rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-item a.active {
+    background: var(--green);
+}
+
+
+@media (max-width: 750px) {
+    .navbar {
+        padding: 0.2rem 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    input {
+        width: 100%;
+    }
+    
+    textarea {
+        width: 100%;
+    }
 }
