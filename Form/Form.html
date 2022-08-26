@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="../commonStyle.css" />
+    <link rel="stylesheet" href="./Form.css">
   </head>
   <body>
     <!-- navber start -->
@@ -45,10 +46,48 @@
                 ><i class="fa-solid fa-arrow-left"></i
               ></a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                >Form <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Form Attribute <span class="sr-only">(current)</span></a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- navber start -->
+
+    <div class="container">
+      <section>
+        <h3 class="heading"><span>form</span></h3>
+
+        <form action="">
+          <label for="name">Name: </label>
+          <input type="text" id="name" placeholder="Enter your name">
+          <label for="phone">Phone: </label>
+          <input type="tel" id="phone" placeholder="Enter your Phone number">
+          <input type="submit">
+        </form>
+
+        <section>
+          <code>
+            &lt;form action=""&gt;<br>
+              &nbsp; &lt;label for="name"&gt;Name: &lt;/label&gt;<br>
+              &nbsp; &lt;input type="text" id="name" placeholder="Enter your name"&gt;<br>
+              &nbsp; &lt;label for="phone"&gt;Phone: &lt;/label&gt;<br>
+              &nbsp; &lt;input type="tel" id="phone" placeholder="Enter your Phone number"&gt;<br>
+              &nbsp; &lt;input type="submit"&gt;<br>
+            &lt;/form&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> An HTML form is used to collect user input.</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> Notice that each input field must have a name attribute to be submitted. </p>
+      </section>
+    </div>
   </body>
 </html>

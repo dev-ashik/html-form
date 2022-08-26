@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- using bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
     <!-- using font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="./commonStyle.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -19,14 +27,22 @@
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><i class="fa-solid fa-star"></i></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" href="#"
-                  >HOME <span class="sr-only">(current)</span></a
+                  >input <span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
@@ -60,7 +76,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./InputRestrictions/Input Restrictions.html"
+                <a
+                  class="nav-link"
+                  href="./InputRestrictions/Input Restrictions.html"
                   >Restrictions <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -71,21 +89,18 @@
       <!-- navber start -->
     </header>
 
-    <br><br><br>
+    <br /><br /><br />
     <div class="container">
-
       <!-- a start -->
       <!-- b start -->
       <section>
         <h3 class="heading">type: <span>Button</span></h3>
         <div>
-          <input type="button" value="Button" >
+          <input type="button" value="Button" />
         </div>
 
         <section>
-          <code>
-              &lt;input type="button" value="Button"  &gt;<br>
-          </code>
+          <code> &lt;input type="button" value="Button" &gt;<br /> </code>
         </section>
         <p class="description"><i class="fa-solid fa-arrow-right"></i> ...</p>
       </section>
@@ -94,54 +109,63 @@
         <h3 class="heading"><span>type: color</span></h3>
 
         <label for="favcolor">Select your favorite color:</label>
-        <input type="color" value="#336699" id="favcolor"/>
+        <input type="color" value="#336699" id="favcolor" />
 
         <section>
           <code>
-            &lt;label for="favcolor"&gt;Select your favorite color:&lt;/label&gt;<br>
+            &lt;label for="favcolor"&gt;Select your favorite
+            color:&lt;/label&gt;<br />
             &lt;input type="color" value="#336699"/ id="favcolor" &gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> Depending on browser support, a color picker can show up in the input field.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> Depending on browser support,
+          a color picker can show up in the input field.
+        </p>
       </section>
 
       <section>
         <h3 class="heading">type: <span>checkbox</span></h3>
         <div>
-          <input type="checkbox" name="check1" checked >
+          <input type="checkbox" name="check1" checked />
           <label for="chenk1">apple</label>
-          <input type="checkbox" name="check2">
+          <input type="checkbox" name="check2" />
           <label for="chenk2">banana</label>
         </div>
 
         <section>
           <code>
-            &lt;div&gt;<br>
-              &nbsp; &lt;input type="checkbox" name="check1" checked &gt;<br>
-              &nbsp; &lt;label for="chenk1"&gt;apple&lt;/label&gt;
-              &nbsp; &lt;input type="checkbox" name="check2"&gt;<br>
-              &nbsp; &lt;label for="chenk2"&gt;banana&lt;/label&gt;<br>
-            &lt;/div&gt;<br>
+            &lt;div&gt;<br />
+            &nbsp; &lt;input type="checkbox" name="check1" checked &gt;<br />
+            &nbsp; &lt;label for="chenk1"&gt;apple&lt;/label&gt; &nbsp;
+            &lt;input type="checkbox" name="check2"&gt;<br />
+            &nbsp; &lt;label for="chenk2"&gt;banana&lt;/label&gt;<br />
+            &lt;/div&gt;<br />
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> Checkboxes let a user select
+          ZERO or MORE options of a limited number of choices.
+        </p>
       </section>
 
       <!-- d start -->
       <section>
-        <h3 class="heading">type: <span>date, time, Datetime-local, month</span></h3>
+        <h3 class="heading">
+          type: <span>date, time, Datetime-local, month</span>
+        </h3>
 
         <label for="birthday">Birthday: </label>
         <input class="date" type="date" />
 
         <section>
           <code>
-            &lt;label for="birthday"&gt;Birthday: &lt;/label&gt;<br>
+            &lt;label for="birthday"&gt;Birthday: &lt;/label&gt;<br />
             &lt;input type="date" for="birthday" /&gt;
           </code>
         </section>
 
-        <hr>
+        <hr />
         <a href="./DateAndTime/DateAndTime.html" class="btn">date and time</a>
       </section>
 
@@ -150,14 +174,19 @@
         <h3 class="heading">type: <span>email</span></h3>
         <label for="email">Email: </label>
         <form action="">
-          <input type="email" placeholder="enter your email"/>
+          <input type="email" placeholder="enter your email" />
         </form>
         <section>
           <code>
             &lt;input type="email" placeholder="enter your email"/&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> to take email. Depending on browser support, the e-mail address can be automatically validated when submitted. Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> to take email. Depending on
+          browser support, the e-mail address can be automatically validated
+          when submitted. Some smartphones recognize the email type, and add
+          ".com" to the keyboard to match email input.
+        </p>
       </section>
 
       <!-- f start -->
@@ -165,15 +194,19 @@
         <h3 class="heading">type: <span>File</span></h3>
         <form action="">
           <label for="file">Select file: </label>
-          <input type="file" id="file"/>
+          <input type="file" id="file" />
         </form>
         <section>
           <code>
-            &lt;label for="file"&gt;Select file: &lt;/label&gt;<br>
+            &lt;label for="file"&gt;Select file: &lt;/label&gt;<br />
             &lt;input type="file" id="file" /&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> The <strong>type="file"</strong> defines a file-select field and a "Browse" button for file uploads.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> The
+          <strong>type="file"</strong> defines a file-select field and a
+          "Browse" button for file uploads.
+        </p>
       </section>
 
       <!-- g start -->
@@ -182,35 +215,56 @@
         <h3 class="heading">type: <span>Hidden</span></h3>
         <form action="">
           <label for="myName">Name : </label>
-          <input type="text" id="myName"/>
+          <input type="text" id="myName" />
           <label for="myage">Hidden field: </label>
-          <input type="hidden" id="myage"/>
+          <input type="hidden" id="myage" />
         </form>
         <section>
           <code>
-            &lt;label for="myName"&gt;Name file: &lt;/label&gt;<br>
-            &lt;input type="myName" id="myName" /&gt;<br>
-            &lt;label for="myage"&gt;Hidden field: &lt;/label&gt;<br>
+            &lt;label for="myName"&gt;Name file: &lt;/label&gt;<br />
+            &lt;input type="myName" id="myName" /&gt;<br />
+            &lt;label for="myage"&gt;Hidden field: &lt;/label&gt;<br />
             &lt;input <strong>type="hidden"</strong> id="myage" /&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> a hidden input field (not visible to a user). A hidden field often stores what database record that needs to be updated when the form is submitted. </p>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> <strong>Note:</strong> While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> a hidden input field (not
+          visible to a user). A hidden field often stores what database record
+          that needs to be updated when the form is submitted.
+        </p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> <strong>Note:</strong> While
+          the value is not displayed to the user in the page's content, it is
+          visible (and can be edited) using any browser's developer tools or
+          "View Source" functionality. Do not use hidden inputs as a form of
+          security!
+        </p>
       </section>
-
 
       <!-- i start -->
       <section>
         <h3 class="heading">type: <span>Image</span></h3>
         <form action="">
-          <input type="image" src="./photo/right-arrow.jpg" alt="Submit" height="70px" width="100px" id="image-submit" />
+          <input
+            type="image"
+            src="./photo/right-arrow.jpg"
+            alt="Submit"
+            height="70px"
+            width="100px"
+            id="image-submit"
+          />
         </form>
         <section>
           <code>
-            &lt;input type="image" src="./photo/right-arrow.jpg" alt="Submit" height="70px" width="100px" id="image-submit" /&gt;
+            &lt;input type="image" src="./photo/right-arrow.jpg" alt="Submit"
+            height="70px" width="100px" id="image-submit" /&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> The <strong>type="image"</strong> defines an image as a submit button. The path to the image is specified in the src attribute.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> The
+          <strong>type="image"</strong> defines an image as a submit button. The
+          path to the image is specified in the src attribute.
+        </p>
       </section>
 
       <!-- j start -->
@@ -229,17 +283,13 @@
         />
         <section>
           <code>
-            &lt;input
-              type="number"
-              name="number"
-              placeholder="enter number"
-              id="number"
-            /&gt;
+            &lt;input type="number" name="number" placeholder="enter number"
+            id="number" /&gt;
           </code>
         </section>
         <p class="description"><i class="fa-solid fa-arrow-right"></i> ...</p>
 
-        <hr>
+        <hr />
         <label for="">type number (1-10)</label>
         <input
           class="numberInput-box"
@@ -252,171 +302,225 @@
         />
         <section>
           <code>
-            &lt;input
-            type="number"
-            name="number"
-            min="1"
-            max="10"
-            placeholder="enter number"
-            id="number"
-            /&gt;
+            &lt;input type="number" name="number" min="1" max="10"
+            placeholder="enter number" id="number" /&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> only can take number. <strong>minimum</strong> number is 1. and <strong>maximum</strong> number is 10</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> only can take number.
+          <strong>minimum</strong> number is 1. and
+          <strong>maximum</strong> number is 10
+        </p>
       </section>
       <!-- o start -->
       <!-- p start -->
       <section>
         <h3 class="heading">type: <span>password</span></h3>
-        <input type="password" placeholder="Enter Password"/>
+        <input type="password" placeholder="Enter Password" />
         <section>
           <code>
             &lt;input type="password" placeholder="Enter Password"/&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> value is not visible. The characters in a password field are masked <strong>(shown as asterisks or circles)</strong>.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> value is not visible. The
+          characters in a password field are masked
+          <strong>(shown as asterisks or circles)</strong>.
+        </p>
       </section>
       <!-- q start -->
       <!-- r start -->
       <section>
         <h3 class="heading">type: <span>range</span></h3>
-        <input type="range" name="range1" min="0" max="100" step="10" value="20">
+        <input
+          type="range"
+          name="range1"
+          min="0"
+          max="100"
+          step="10"
+          value="20"
+        />
         <section>
           <code>
-            &lt;input type="range" name="range" min="0" max="100" step="10" value="20"&gt;
+            &lt;input type="range" name="range" min="0" max="100" step="10"
+            value="20"&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> you can set restrictions on what numbers are accepted with the min, max, and step attributes</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> you can set restrictions on
+          what numbers are accepted with the min, max, and step attributes
+        </p>
       </section>
 
       <section>
         <h3 class="heading">type: <span>radio</span></h3>
         <section>
-          <input type="radio" name="country" value="one" id="one">
-          <label for="one">Bangladesh</label><br>
-          <input type="radio" name="country" value="two" checked id="two">
-          <label for="two">India</label><br>
-          <input type="radio" name="country" value="three" id="three">
+          <input type="radio" name="country" value="one" id="one" />
+          <label for="one">Bangladesh</label><br />
+          <input type="radio" name="country" value="two" checked id="two" />
+          <label for="two">India</label><br />
+          <input type="radio" name="country" value="three" id="three" />
           <label for="three">China</label>
         </section>
         <section>
           <code>
-            &lt;section&gt;<br>
-              &nbsp; &lt;input type="radio" name="country" value="one" id="one"&gt;<br>
-              &nbsp; &lt;label for="one"&gt;Bangladesh&lt;/label&gt;<br>
-              &nbsp; &lt;input type="radio" name="country" value="two" checked id="two"&gt;<br>
-              &nbsp; &lt;label for="two"&gt;India&lt;/label&gt;<br>
-              &nbsp; &lt;input type="radio" name="country" value="three" id="three"&gt;<br>
-              &nbsp;  &lt;label for="three"&gt;China&lt;/label&gt;<br>
+            &lt;section&gt;<br />
+            &nbsp; &lt;input type="radio" name="country" value="one"
+            id="one"&gt;<br />
+            &nbsp; &lt;label for="one"&gt;Bangladesh&lt;/label&gt;<br />
+            &nbsp; &lt;input type="radio" name="country" value="two" checked
+            id="two"&gt;<br />
+            &nbsp; &lt;label for="two"&gt;India&lt;/label&gt;<br />
+            &nbsp; &lt;input type="radio" name="country" value="three"
+            id="three"&gt;<br />
+            &nbsp; &lt;label for="three"&gt;China&lt;/label&gt;<br />
             &lt;/section&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> Radio buttons let a user select ONLY ONE of a limited number of choices. and allname are should be same.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> Radio buttons let a user
+          select ONLY ONE of a limited number of choices. and allname are should
+          be same.
+        </p>
       </section>
 
       <section>
         <h3 class="heading">type: <span>reset</span></h3>
         <form action="">
-          <input type="reset" value="Reset" >
+          <input type="reset" value="Reset" />
         </form>
         <section>
-          <code>
-            &lt;input type="reset" value="Reset" &gt;
-          </code>
+          <code> &lt;input type="reset" value="Reset" &gt; </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> type="reset" defines a reset button that will reset all form values to their default values. If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
-        
-        <hr>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> type="reset" defines a reset
+          button that will reset all form values to their default values. If you
+          change the input values and then click the "Reset" button, the
+          form-data will be reset to the default values.
+        </p>
+
+        <hr />
         <a href="./Reset/Reset.html" class="btn">reset button</a>
       </section>
 
       <!-- s start -->
       <section>
         <h3 class="heading">type: <span>submit</span></h3>
-        <input type="submit" value="SUBMIT"/>
+        <input type="submit" value="SUBMIT" />
         <section>
-          <code>
-            &lt;input type="submit" value="SUBMIT"/&gt;
-          </code>
+          <code> &lt;input type="submit" value="SUBMIT"/&gt; </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> to submit form value. <strong>type="submit"</strong> defines a button for submitting form data to a form-handler.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> to submit form value.
+          <strong>type="submit"</strong> defines a button for submitting form
+          data to a form-handler.
+        </p>
       </section>
 
       <section>
         <h3 class="heading">type: <span>search</span></h3>
-        <input type="search" placeholder="search..."/>
+        <input type="search" placeholder="search..." />
         <section>
-          <code>
-            &lt;input type="search" placeholder="search..."/&gt;
-          </code>
+          <code> &lt;input type="search" placeholder="search..."/&gt; </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> The <strong>type="search"</strong> is used for search fields (a search field behaves like a regular text field)..</p>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> search type input fild. On crome broweser appear a close icon when type anything in the input box.</p>
-        <hr>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> To remove close icon.</p>
-        <input type="search" placeholder="search..." class="closeXicon"/>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> The
+          <strong>type="search"</strong> is used for search fields (a search
+          field behaves like a regular text field)..
+        </p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> search type input fild. On
+          crome broweser appear a close icon when type anything in the input
+          box.
+        </p>
+        <hr />
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> To remove close icon.
+        </p>
+        <input type="search" placeholder="search..." class="closeXicon" />
         <section>
           <code>
-            .closeXicon::-webkit-search-cancel-button {<br>
-              &nbsp; &nbsp; display: none;<br>
+            .closeXicon::-webkit-search-cancel-button {<br />
+            &nbsp; &nbsp; display: none;<br />
             }
           </code>
         </section>
       </section>
 
-
       <!-- t start -->
       <section>
         <h3 class="heading">type: <span>text</span></h3>
         <label for="name">Name :</label>
-        <input id="name" type="text" placeholder="write your name">
+        <input id="name" type="text" placeholder="write your name" />
         <section>
           <code>
-            &lt;label for="name"&gt;Name :&lt;/label&gt;<br>
+            &lt;label for="name"&gt;Name :&lt;/label&gt;<br />
             &lt;input id="name" type="text" placeholder="write your name"&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> Anything can input.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> Anything can input.
+        </p>
       </section>
 
       <section>
         <h3 class="heading">type: <span>Tel</span></h3>
 
         <label for="phone">Phone Number :</label>
-        <input id="phone" type="tel" placeholder="000-00-000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <input
+          id="phone"
+          type="tel"
+          placeholder="000-00-000"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        />
 
         <section>
           <code>
-            &lt;label for="phone"&gt;Phone Number :&lt;/label&gt;<br>
-            &lt;input id="phone" type="tel" placeholder="000-00-000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt;
+            &lt;label for="phone"&gt;Phone Number :&lt;/label&gt;<br />
+            &lt;input id="phone" type="tel" placeholder="000-00-000"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> To contain a telephone number..</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> To contain a telephone
+          number..
+        </p>
       </section>
 
       <section>
         <h3 class="heading">text area</h3>
         <label for="">text area</label>
-        <textarea name="" id="" cols="30" rows="10" placeholder="write your message"></textarea >
-          <section>
-            <code>
-              &lt;textarea name="" id="" cols="30" rows="10" placeholder="write your message"&gt;&lt;/textarea &gt;
-            </code>
-          </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> </p>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="write your message"
+        ></textarea>
+        <section>
+          <code>
+            &lt;textarea name="" id="" cols="30" rows="10" placeholder="write
+            your message"&gt;&lt;/textarea &gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i></p>
       </section>
 
-      
       <!-- u start -->
       <section>
         <h3 class="heading">type: <span>url</span></h3>
-        <input class="date" type="url" placeholder="url"/>
+        <input class="date" type="url" placeholder="url" />
         <section>
           <code>
             &lt;input class="date" type="url" placeholder="url"/&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i>The <strong>type="url"</strong> is used for input fields that should contain a URL address. Field can be <strong>automatically validated</strong> when submitted.</p>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i>The
+          <strong>type="url"</strong> is used for input fields that should
+          contain a URL address. Field can be
+          <strong>automatically validated</strong> when submitted.
+        </p>
       </section>
 
       <!-- v start -->
@@ -425,38 +529,15 @@
       <!-- y start -->
       <!-- z start -->
 
-      
+      <section>
+        <h3 class="heading"><span>Note:</span></h3>
 
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-        
-
-      
-      
-
-
-      
-
-      
-
-      
-      
-
-      
-
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> Note: The form itself is not
+          visible. Also note that the default width of an input field is 20
+          characters.
+        </p>
+      </section>
 
       <!-- dropdown start -->
       <div class="d-flex bd-highlight dropDown-section">
@@ -484,8 +565,12 @@
       <!-- dropdown end -->
     </div>
 
-  <!-- bootstrap js start -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  <!-- bootstrap js end -->
+    <!-- bootstrap js start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js end -->
   </body>
 </html>
