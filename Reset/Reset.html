@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset</title>
+
+    <!-- using bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- using font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../commonStyle.css" />
+  </head>
+  <body>
+    <!-- navber start -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-star"></i></a> -->
+        <a class="nav-link" href="../index.html"
+          ><i class="fa-solid fa-arrow-left"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="../index.html"
+                  ><i class="fa-solid fa-arrow-left"></i
+                ></a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navber end -->
+
+    <div class="container">
+      <section>
+        <h3 class="heading">type: <span>reset</span></h3>
+        <form id="form1" >
+          <label for="name">Name: </label>
+          <input type="text" value="Ashik" placeholder="Ashik" name="name" />
+          <label for="number">Phone:</label>
+          <input
+            type="number"
+            value="00000000"
+            placeholder="00000000"
+            name="phone"
+          />
+          <input type="submit" value="SUBMIT" />
+          <input type="reset" value="RESET" />
+        </form>
+
+        <div>
+          <p id="submitedName">Name: <span></span></p>
+          <p id="submitedPhoneNumber">Phone: <span></span></p>
+        </div>
+        <section>
+          <code>
+            &lt;form action=""&gt;<br />
+            &nbsp; &lt;label for="name"&gt;Name: &lt;/label&gt;<br />
+            &nbsp; &lt;input type="text" value="Ashik" placeholder="Ashik"
+            /&gt;<br />
+            &nbsp; &lt;label for="number">Phone:&lt;/label&gt;<br />
+            &nbsp; &lt;input type="number" value="+00 000 000" placeholder="+00
+            000 000" /&gt;<br />
+            &nbsp; &lt;input type="submit" value="SUBMIT" /&gt;<br />
+            &nbsp; &lt;input type="reset" value="RESET" /&gt;<br />
+            &lt;/form&gt;
+          </code>
+        </section>
+        <p class="description">
+          <i class="fa-solid fa-arrow-right"></i> type="reset" defines a reset
+          button that will reset all form values to their default values. If you
+          change the input values and then click the "Reset" button, the
+          form-data will be reset to the default values.
+        </p>
+      </section>
+    </div>
+
+    <script>
+      const name = document.getElementById("submitedName").innerHTML;
+      const phoneNumber = document.getElementById("submitedPhoneNumber");
+      const loginForm = document.getElementById("form1");
+
+      const handleSubmit = (e) => {
+        console.log(e.target.name.value);
+        console.log("clicked");
+        e.preventDefault();
+      };
+      
+      loginForm.addEventListener("submit", handleSubmit);
+      
+    </script>
+  </body>
+</html>

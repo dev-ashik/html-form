@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Input Restrictions</title>
 
     <!-- using bootstrap -->
     <link
@@ -28,8 +28,8 @@
       <div class="container-fluid">
         <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-star"></i></a> -->
         <a class="nav-link" href="../index.html"
-                ><i class="fa-solid fa-arrow-left"></i
-              ></a>
+          ><i class="fa-solid fa-arrow-left"></i
+        ></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,48 +45,39 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <!-- <a class="nav-link" href="../index.html"
-                ><i class="fa-solid fa-arrow-left"></i
-              ></a> -->
+                  ><i class="fa-solid fa-arrow-left"></i
+                ></a> -->
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- navber end -->
+
     <div class="container">
       <section>
-        <form action="">
-          <label for="">autofocus on:</label>
-          <input type="text" name="text1" autofocus />
-
-          <label for="">autofocus off:</label>
-          <input type="text" name="text1" />
-        </form>
-
-        <section>
-          <code>
-            /* auto focus */ <br />
-            &lt;input type="text" name="text1" autofocus&gt;<br /><br />
-
-            /* auto focus off */ <br />
-            &lt;input type="text" name="text1" &gt;
-          </code>
-        </section>
-
-        <p class="description">
-          <i class="fa-solid fa-arrow-right"></i>When page reload autofocus the
-          input fild width attribut "autofocus".
-        </p>
+        <h3 class="heading"><span>Input Restrictions</span></h3>
+        <ul>
+          <li>
+            <strong>checked - </strong> Specifies that an input field should be
+            pre-selected when the page loads (for type="checkbox" or
+            type="radio")
+          </li>
+          <li>
+            <strong>disabled - </strong> Specifies that an input field should be
+            disabled
+          </li>
+          <li><strong>max - </strong>Specifies the maximum value for an input field</li>
+          <li><strong>maxlength - </strong>Specifies the maximum number of character for an input field.</li>
+          <li><strong>min - </strong>Specifies the minimum value for an input field.</li>
+          <li><strong>pattern - </strong>Specifies a regular expression to check the input value against.</li>
+          <li><strong>readonly - </strong>Specifies that an input field is read only (cannot be changed).</li>
+          <li><strong>required - </strong>Specifies that an input field is required (must be filled out).</li>
+          <li><strong>size - </strong>Specifies the width (in characters) of an input field.</li>
+          <li><strong>step - </strong>Specifies the legal number intervals for an input field.</li>
+          <li><strong>value - </strong>Specifies the default value for an input field.</li>
+        </ul>
       </section>
-      <input type="search">
     </div>
-
-    <!-- bootstrap js start -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <!-- bootstrap js end -->
   </body>
 </html>

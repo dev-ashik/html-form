@@ -4,6 +4,10 @@ input[type="radio"] {
     display: inline-block;
 }
 
+#image-submit {
+    height: 70px;
+    width: 100px;
+}
 
 
 
@@ -34,5 +38,9 @@ input[type="radio"] {
 }
 /***** dropDown start *****/
 
+
+.closeXicon::-webkit-search-cancel-button {
+    display: none;
+}
 
 

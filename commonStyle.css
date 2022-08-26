@@ -1,105 +1,160 @@
 :root {
-    --green: #27ae60;
-    --black: #192a56;
-    --light-color: #666;
-    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-  }
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 section {
-    /* border: 2px solid rgb(54, 13, 131); */
-    padding: 2rem 7%;
-    box-shadow: var(--box-shadow);
-    margin: 2rem 0;
+  /* border: 2px solid rgb(54, 13, 131); */
+  padding: 2rem 7%;
+  box-shadow: var(--box-shadow);
+  margin: 2rem 0;
 }
 
-input {
-    width: 30rem;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    display: block;
-    margin: .5rem 0;
-    margin-top: 0;
+.heading {
+  text-align: center;
+  text-transform: capitalize;
 }
 
-textarea {
-    width: 30rem;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    display: block;
-    margin: .5rem 0;
-}
-
-label {
-    font-size: 1.5rem;
-    color: var(--green);
-    margin-bottom: 0.5rem;
-}
-
-.description {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-top: 2rem;
-    color: gray;
-}
-
-.description i {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: rgb(29, 6, 243);
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.navbar {
-    padding: 0.2rem 7%;
-}
-
-.navbar-brand i {
-    color: var(--black) !important;
-    font-size: 3rem;
+.heading span {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  margin: 0 auto;
 }
 
 .navbar-nav .nav-item a {
-    font-size: 1.3rem;
-    color: var(--black);
-    font-weight: 500;
-    padding: .2rem 1rem;
-    border-radius: .4rem;
-    text-transform: uppercase;
-    margin-right: 1rem;
+  font-size: 1rem !important;
+  margin-right: 0.1rem !important;
+}
+
+.heading::after {
+  content: "";
+  background-color: var(--green);
+  background: #666;
+  width: 100%;
+  height: 0.1rem;
+  display: block;
+}
+
+.sub-heading {
+  font-size: 1.9rem;
+  color: var(--green);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 500;
+  padding: 0.2rem 1rem;
+  border-radius: 0.4rem;
+  text-transform: capitalize;
+  margin-right: 1rem;
+  background: var(--green);
+  border: none;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: #fff;
+  background: var(--black);
+  box-shadow: var(--box-shadow);
+}
+
+input {
+  width: 30rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+  display: block;
+  margin: 0.5rem 0;
+  margin-top: 0;
+}
+
+textarea {
+  width: 30rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+label {
+  font-size: 1.3rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  color: gray;
+}
+
+.description i {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: rgb(29, 6, 243);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar {
+  padding: 0.2rem 7%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand i {
+  color: var(--black) !important;
+  font-size: 3rem;
+}
+
+.navbar-nav .nav-item a {
+  font-size: 1.3rem;
+  color: var(--black);
+  font-weight: 500;
+  padding: 0.2rem 1rem;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  margin-right: 1rem;
 }
 
 .navbar-nav .nav-item a:hover,
 .navbar-nav .nav-item a.active {
-    background: var(--green);
+  background: var(--green);
 }
 
-
 @media (max-width: 750px) {
-    .navbar {
-        padding: 0.2rem 2rem;
-    }
+  .navbar {
+    padding: 0.2rem 2rem;
+  }
 
-    section {
-        padding: 1rem;
-    }
+  section {
+    padding: 1rem;
+  }
 
-    input {
-        width: 100%;
-    }
-    
-    textarea {
-        width: 100%;
-    }
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
 }

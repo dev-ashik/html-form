@@ -35,6 +35,11 @@
                 >
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Attribute <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="./autofocus/autofocus.html"
                   >Auto Focus <span class="sr-only">(current)</span></a
                 >
@@ -54,6 +59,11 @@
                   >FORM <span class="sr-only">(current)</span></a
                 >
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./InputRestrictions/Input Restrictions.html"
+                  >Restrictions <span class="sr-only">(current)</span></a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -61,79 +71,155 @@
       <!-- navber start -->
     </header>
 
-
+    <br><br><br>
     <div class="container">
+
+      <!-- a start -->
+      <!-- b start -->
       <section>
-        <label for="text">Name :</label>
-        <input id="text" type="text" placeholder="write your text">
+        <h3 class="heading">type: <span>Button</span></h3>
+        <div>
+          <input type="button" value="Button" >
+        </div>
+
         <section>
           <code>
-            &lt;label for="text"&gt;Name :&lt;/label&gt;<br>
-            &lt;input id="text" type="text" placeholder="enter your name"&gt;
+              &lt;input type="button" value="Button"  &gt;<br>
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> anything can input.</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> ...</p>
+      </section>
+      <!-- c start -->
+      <section>
+        <h3 class="heading"><span>type: color</span></h3>
+
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" value="#336699" id="favcolor"/>
+
+        <section>
+          <code>
+            &lt;label for="favcolor"&gt;Select your favorite color:&lt;/label&gt;<br>
+            &lt;input type="color" value="#336699"/ id="favcolor" &gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> Depending on browser support, a color picker can show up in the input field.</p>
       </section>
 
       <section>
-        <label for="">type email</label>
+        <h3 class="heading">type: <span>checkbox</span></h3>
+        <div>
+          <input type="checkbox" name="check1" checked >
+          <label for="chenk1">apple</label>
+          <input type="checkbox" name="check2">
+          <label for="chenk2">banana</label>
+        </div>
+
+        <section>
+          <code>
+            &lt;div&gt;<br>
+              &nbsp; &lt;input type="checkbox" name="check1" checked &gt;<br>
+              &nbsp; &lt;label for="chenk1"&gt;apple&lt;/label&gt;
+              &nbsp; &lt;input type="checkbox" name="check2"&gt;<br>
+              &nbsp; &lt;label for="chenk2"&gt;banana&lt;/label&gt;<br>
+            &lt;/div&gt;<br>
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+      </section>
+
+      <!-- d start -->
+      <section>
+        <h3 class="heading">type: <span>date, time, Datetime-local, month</span></h3>
+
+        <label for="birthday">Birthday: </label>
+        <input class="date" type="date" />
+
+        <section>
+          <code>
+            &lt;label for="birthday"&gt;Birthday: &lt;/label&gt;<br>
+            &lt;input type="date" for="birthday" /&gt;
+          </code>
+        </section>
+
+        <hr>
+        <a href="./DateAndTime/DateAndTime.html" class="btn">date and time</a>
+      </section>
+
+      <!-- e start -->
+      <section>
+        <h3 class="heading">type: <span>email</span></h3>
+        <label for="email">Email: </label>
         <form action="">
-          <input class="date" type="email" placeholder="input your email"/>
+          <input type="email" placeholder="enter your email"/>
         </form>
         <section>
           <code>
-            &lt;input class="date" type="email" placeholder="input your email"/&gt;
+            &lt;input type="email" placeholder="enter your email"/&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> to take email.</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> to take email. Depending on browser support, the e-mail address can be automatically validated when submitted. Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.</p>
       </section>
 
+      <!-- f start -->
       <section>
-        <label for="">type password</label>
-        <input class="date" type="password" placeholder="Enter Password"/>
+        <h3 class="heading">type: <span>File</span></h3>
+        <form action="">
+          <label for="file">Select file: </label>
+          <input type="file" id="file"/>
+        </form>
         <section>
           <code>
-            &lt;input class="date" type="password" placeholder="Enter Password"/&gt;
+            &lt;label for="file"&gt;Select file: &lt;/label&gt;<br>
+            &lt;input type="file" id="file" /&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> value is not visible.</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> The <strong>type="file"</strong> defines a file-select field and a "Browse" button for file uploads.</p>
       </section>
 
+      <!-- g start -->
+      <!-- h start -->
       <section>
-        <label for="">type submit</label>
-        <input class="date" type="submit" value="SUBMIT"/>
+        <h3 class="heading">type: <span>Hidden</span></h3>
+        <form action="">
+          <label for="myName">Name : </label>
+          <input type="text" id="myName"/>
+          <label for="myage">Hidden field: </label>
+          <input type="hidden" id="myage"/>
+        </form>
         <section>
           <code>
-            &lt;input class="date" type="submit" value="SUBMIT"/&gt;
+            &lt;label for="myName"&gt;Name file: &lt;/label&gt;<br>
+            &lt;input type="myName" id="myName" /&gt;<br>
+            &lt;label for="myage"&gt;Hidden field: &lt;/label&gt;<br>
+            &lt;input <strong>type="hidden"</strong> id="myage" /&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> value is not visible.</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> a hidden input field (not visible to a user). A hidden field often stores what database record that needs to be updated when the form is submitted. </p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> <strong>Note:</strong> While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!</p>
       </section>
 
+
+      <!-- i start -->
       <section>
-        <label for="">type search</label>
-        <input class="date" type="search" placeholder="search..."/>
+        <h3 class="heading">type: <span>Image</span></h3>
+        <form action="">
+          <input type="image" src="./photo/right-arrow.jpg" alt="Submit" height="70px" width="100px" id="image-submit" />
+        </form>
         <section>
           <code>
-            &lt;input class="date" type="search" placeholder="search..."/&gt;
+            &lt;input type="image" src="./photo/right-arrow.jpg" alt="Submit" height="70px" width="100px" id="image-submit" /&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> search type input fild. with close button</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> The <strong>type="image"</strong> defines an image as a submit button. The path to the image is specified in the src attribute.</p>
       </section>
 
+      <!-- j start -->
+      <!-- k start -->
+      <!-- l start -->
+      <!-- m start -->
+      <!-- n start -->
       <section>
-        <label for="">type url</label>
-        <input class="date" type="url" placeholder=""/>
-        <section>
-          <code>
-            &lt;input class="date" type="url" placeholder=""/&gt;
-          </code>
-        </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> </p>
-      </section>
-
-      <section>
-        <label for="">type number</label>
+        <h3 class="heading">type: <span>number</span></h3>
         <input
           class="numberInput-box"
           type="number"
@@ -151,6 +237,9 @@
             /&gt;
           </code>
         </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> ...</p>
+
+        <hr>
         <label for="">type number (1-10)</label>
         <input
           class="numberInput-box"
@@ -173,78 +262,140 @@
             /&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> only number can take. minimum number is 1. and maximum number is 999</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> only can take number. <strong>minimum</strong> number is 1. and <strong>maximum</strong> number is 10</p>
       </section>
-
+      <!-- o start -->
+      <!-- p start -->
       <section>
-        <label for="">type date</label>
-        <input class="date" type="date" />
+        <h3 class="heading">type: <span>password</span></h3>
+        <input type="password" placeholder="Enter Password"/>
         <section>
           <code>
-            &lt;input type="date" /&gt;
+            &lt;input type="password" placeholder="Enter Password"/&gt;
           </code>
         </section>
-
-        <label for="">type date parttern</label>
-        <input class="date" type="date" pattern="\d{4}-\d{2}-\d{2}" value="19/8/2022"/>
-        <section>
-          <code>
-            &lt;input class="date" type="date" pattern="/d{4}-/d{2}-/d{2}" /&gt;
-          </code>
-        </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i>pattern="/d{4}-/d{2}-/d{2} will take 4 disit for year, 2 disit for month and 2 disit for day. </p>
-
-        <label for="">type date title</label>
-        <input class="date" type="date" title="YYYY-MM-DD" />
-        <section>
-          <code>
-            &lt;input class="date" type="date" pattern="/d{4}-/d{2}-/d{2}" title="dd/mm/yyyy" /&gt;
-          </code>
-        </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> <ul>
-          <li>ddmmyyyy</li>
-          <li>dd/mm/yyyy</li>
-          <li>mm/dd/yyyy</li>
-          <li>dd-mm-yyyy</li>
-          <li>mm-dd-yyyy</li>
-          <li>Month dd, yyyy</li>
-        </ul>
-      </p>
-
-        <label for="">type date min max</label>
-        <input class="date" type="date" min="01/01/2022" max="31/12/222" />
-        <section>
-          <code>
-            &lt;input class="date" type="date" min="01/01/2022" max="31/12/222" /&gt;
-          </code>
-        </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> min="01/01/2022" max="31/12/222"</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> value is not visible. The characters in a password field are masked <strong>(shown as asterisks or circles)</strong>.</p>
       </section>
-
+      <!-- q start -->
+      <!-- r start -->
       <section>
-        <label for="">type range</label>
+        <h3 class="heading">type: <span>range</span></h3>
         <input type="range" name="range1" min="0" max="100" step="10" value="20">
         <section>
           <code>
             &lt;input type="range" name="range" min="0" max="100" step="10" value="20"&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> </p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> you can set restrictions on what numbers are accepted with the min, max, and step attributes</p>
       </section>
 
       <section>
-        <label for="">type color</label>
-        <input class="date" type="color" value="#336699"/>
+        <h3 class="heading">type: <span>radio</span></h3>
+        <section>
+          <input type="radio" name="country" value="one" id="one">
+          <label for="one">Bangladesh</label><br>
+          <input type="radio" name="country" value="two" checked id="two">
+          <label for="two">India</label><br>
+          <input type="radio" name="country" value="three" id="three">
+          <label for="three">China</label>
+        </section>
         <section>
           <code>
-            &lt;input class="date" type="color" value="#336699"/&gt;
+            &lt;section&gt;<br>
+              &nbsp; &lt;input type="radio" name="country" value="one" id="one"&gt;<br>
+              &nbsp; &lt;label for="one"&gt;Bangladesh&lt;/label&gt;<br>
+              &nbsp; &lt;input type="radio" name="country" value="two" checked id="two"&gt;<br>
+              &nbsp; &lt;label for="two"&gt;India&lt;/label&gt;<br>
+              &nbsp; &lt;input type="radio" name="country" value="three" id="three"&gt;<br>
+              &nbsp;  &lt;label for="three"&gt;China&lt;/label&gt;<br>
+            &lt;/section&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> only for take date.</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> Radio buttons let a user select ONLY ONE of a limited number of choices. and allname are should be same.</p>
+      </section>
+
+      <section>
+        <h3 class="heading">type: <span>reset</span></h3>
+        <form action="">
+          <input type="reset" value="Reset" >
+        </form>
+        <section>
+          <code>
+            &lt;input type="reset" value="Reset" &gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> type="reset" defines a reset button that will reset all form values to their default values. If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
+        
+        <hr>
+        <a href="./Reset/Reset.html" class="btn">reset button</a>
+      </section>
+
+      <!-- s start -->
+      <section>
+        <h3 class="heading">type: <span>submit</span></h3>
+        <input type="submit" value="SUBMIT"/>
+        <section>
+          <code>
+            &lt;input type="submit" value="SUBMIT"/&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> to submit form value. <strong>type="submit"</strong> defines a button for submitting form data to a form-handler.</p>
+      </section>
+
+      <section>
+        <h3 class="heading">type: <span>search</span></h3>
+        <input type="search" placeholder="search..."/>
+        <section>
+          <code>
+            &lt;input type="search" placeholder="search..."/&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> The <strong>type="search"</strong> is used for search fields (a search field behaves like a regular text field)..</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> search type input fild. On crome broweser appear a close icon when type anything in the input box.</p>
+        <hr>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> To remove close icon.</p>
+        <input type="search" placeholder="search..." class="closeXicon"/>
+        <section>
+          <code>
+            .closeXicon::-webkit-search-cancel-button {<br>
+              &nbsp; &nbsp; display: none;<br>
+            }
+          </code>
+        </section>
       </section>
 
 
+      <!-- t start -->
       <section>
+        <h3 class="heading">type: <span>text</span></h3>
+        <label for="name">Name :</label>
+        <input id="name" type="text" placeholder="write your name">
+        <section>
+          <code>
+            &lt;label for="name"&gt;Name :&lt;/label&gt;<br>
+            &lt;input id="name" type="text" placeholder="write your name"&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> Anything can input.</p>
+      </section>
+
+      <section>
+        <h3 class="heading">type: <span>Tel</span></h3>
+
+        <label for="phone">Phone Number :</label>
+        <input id="phone" type="tel" placeholder="000-00-000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+        <section>
+          <code>
+            &lt;label for="phone"&gt;Phone Number :&lt;/label&gt;<br>
+            &lt;input id="phone" type="tel" placeholder="000-00-000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> To contain a telephone number..</p>
+      </section>
+
+      <section>
+        <h3 class="heading">text area</h3>
         <label for="">text area</label>
         <textarea name="" id="" cols="30" rows="10" placeholder="write your message"></textarea >
           <section>
@@ -255,42 +406,53 @@
         <p class="description"><i class="fa-solid fa-arrow-right"></i> </p>
       </section>
 
+      
+      <!-- u start -->
       <section>
-        <label for="">Check boxe:</label>
-        <div>
-          <input type="checkbox" name="check1" checked >
-          <input type="checkbox" name="check2">
-        </div>
-
+        <h3 class="heading">type: <span>url</span></h3>
+        <input class="date" type="url" placeholder="url"/>
         <section>
           <code>
-            &lt;div&gt;<br>
-              &nbsp; &lt;input type="checkbox" name="check1" checked &gt;<br>
-              &nbsp; &lt;input type="checkbox" name="check2"&gt;<br>
-            &lt;/div&gt;<br>
+            &lt;input class="date" type="url" placeholder="url"/&gt;
           </code>
         </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> check box</p>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i>The <strong>type="url"</strong> is used for input fields that should contain a URL address. Field can be <strong>automatically validated</strong> when submitted.</p>
       </section>
 
-      <section>
-        <label for="">Radio buttons:</label>
-        <div>
-          <input type="radio" name="radio1" value="one">
-          <input type="radio" name="radio1" value="two" checked>
-          <input type="radio" name="radio1" value="three">
-        </div>
-        <section>
-          <code>
-            &lt;div&gt;<br>
-              &lt;input type="radio" name="radio1" value="one"&gt;<br>
-              &lt;input type="radio" name="radio1" value="two" checked&gt;<br>
-              &lt;input type="radio" name="radio1" value="three"&gt;<br>
-            &lt;/div&gt;<br>
-          </code>
-        </section>
-        <p class="description"><i class="fa-solid fa-arrow-right"></i> Radio buttons</p>
-      </section>
+      <!-- v start -->
+      <!-- w start -->
+      <!-- x start -->
+      <!-- y start -->
+      <!-- z start -->
+
+      
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+        
+
+      
+      
+
+
+      
+
+      
+
+      
       
 
       

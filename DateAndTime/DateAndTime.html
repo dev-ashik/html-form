@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+
+    <!-- using bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- using font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../commonStyle.css" />
+</head>
+<body>
+    <!-- navber start -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#"><i class="fa-solid fa-star"></i></a> -->
+          <a class="nav-link" href="../index.html"
+                  ><i class="fa-solid fa-arrow-left"></i
+                ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="../index.html"
+                  ><i class="fa-solid fa-arrow-left"></i
+                ></a> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navber end -->
+
+
+
+      <section>
+        <h3 class="heading">type: <span>date</span></h3>
+        
+        <label for="birthday">Birthday: </label>
+        <input class="date" type="date" />
+
+        <section>
+          <code>
+            &lt;label for="birthday"&gt;Birthday: &lt;/label&gt;<br>
+            &lt;input type="date" for="birthday" /&gt;
+          </code>
+        </section>
+        <hr>
+
+        <!-- min max -->
+        <h4 class="sub-heading">min max</h4>
+        <label for="">min="2022-01-01" & max="2022-12-31"</label>
+        <input type="date" min="2022-01-01" max="2022-12-31"/>
+        <section>
+          <code>
+            &lt;input type="date" min="2022-01-01" max="2022-12-31" /&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> You can also use the min and max attributes to add restrictions to dates.</p>
+        <hr>
+
+        <!-- Datetime-local -->
+        <h4 class="sub-heading">Datetime-local</h4>
+        <label for="">Birthday (date and time)</label>
+        <input type="datetime-local" />
+        <section>
+          <code>
+            &lt;input type="datetime-local" /&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> The <strong>type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+        <hr>
+
+
+        <!-- Month -->
+        <h4 class="sub-heading">month</h4>
+
+        <label for="">Birthday (year and month)</label>
+        <input type="month" />
+
+        <section>
+          <code>
+            &lt;input type="month" /&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> The <strong>type="month"</strong> allows the user to select a month and year.</p>
+        <hr>
+
+
+        <!-- Time -->
+        <h4 class="sub-heading">Time</h4>
+
+        <label for="">class time:</label>
+        <input type="time" />
+
+        <section>
+          <code>
+            &lt;input type="time" /&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> To select a time (no time zone).</p>
+        <hr>
+
+
+        <!-- Week -->
+        <h4 class="sub-heading">Week</h4>
+
+        <label for="">Select a week:</label>
+        <input type="week" />
+
+        <section>
+          <code>
+            &lt;input type="week" /&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> To select a week and year.</p>
+        <hr>
+
+      
+        <!-- ! need to fixed down -->
+        <label for="">type date title</label>
+        <input type="date" title="YYYY-MM-DD" />
+        <section>
+          <code>
+            &lt;input type="date" pattern="/d{4}-/d{2}-/d{2}" title="dd/mm/yyyy" /&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> <ul>
+          <li>ddmmyyyy</li>
+          <li>dd/mm/yyyy</li>
+          <li>mm/dd/yyyy</li>
+          <li>dd-mm-yyyy</li>
+          <li>mm-dd-yyyy</li>
+          <li>Month dd, yyyy</li>
+        </ul>
+      </p>
+      <label for="">type date min max</label>
+        <input class="date" type="date" min="01/01/2022" max="31/12/222" />
+        <section>
+          <code>
+            &lt;input class="date" type="date" min="01/01/2022" max="31/12/222" /&gt;
+          </code>
+        </section>
+        <p class="description"><i class="fa-solid fa-arrow-right"></i> min="01/01/2022" max="31/12/222"</p>
+
+      </section>
+    
+</body>
+</html>
